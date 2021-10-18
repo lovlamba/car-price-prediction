@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        fieldset {
+            width: 400px;
+            height: 500px;
+            background-color: #eeeeee;
+        }
+
+        legend {
+            background-color: rgb(2, 140, 253);
+            color: white;
+            padding: 5px 10px;
+        }
+
+        input {
+            margin: 5px;
+        }
+
+        body {
+            text-align: center;
+            height: 80px;
+            background-image: url('/static/car1.jpeg');
+            background-repeat: no-repeat;
+            background-size: 1550px 750px;
+        }
+
+        div.form {
+            display: block;
+            text-align: center;
+            margin-top: 70px;
+        }
+
+        form {
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+        }
+
+        .center {
+            margin: left;
+        }
+
+        input[type=button],
+        input[type=submit],
+        input[type=reset] {
+            background-color: #f44336;
+            border: none;
+            color: white;
+            padding: 12px 28px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <form name="form1">
+            <fieldset>
+                <center>
+                    <h1>Car Price Predictor</h1>
+                </center>
+
+                <div class="center">
+                    <label for="cb"> Curb weight </label>
+                    <input type="number" step="any" id="cb" name="cb"><br><br>
+                </div>
+                <div class="center">
+                    <label for="es"> Engine size </label>
+                    <input type="number" step="any" id="es" name="es"><br><br>
+                </div>
+                <div class="center">
+                    <label for="wb"> Wheel base </label>
+                    <input type="number" step="any" id="wb" name="wb"><br><br>
+                </div>
+                <div class="center">
+                    <label for="cl"> Car length </label>
+                    <input type="number" step="any" id="cl" name="cl"><br><br>
+                </div>
+                <div class="center">
+                    <label for="cw"> Car width </label>
+                    <input type="number" step="any" id="cw" name="cw"><br><br>
+                </div>
+                <div class="center">
+                    <label for="br"> Bore ratio </label>
+                    <input type="number" step="any" id="br" name="br"><br><br>
+                </div>
+                <div class="center">
+                    <label for="st"> Stroke </label>
+                    <input type="number" step="any" id="st" name="st"><br><br>
+                </div>
+                <center><input type="submit" value="Predict"></center>
+            </fieldset>
+        </form>
+    </div>
+    <br><br><br>
+    <h1><b>{{variable}}</b></h1>
+</body>
+</html>
